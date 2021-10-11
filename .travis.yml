@@ -11,6 +11,11 @@ go:
   - 1.12.x
   - 1.11.x
   - 1.10.x
+# Disable GO version tip on ppc64le
+jobs:
+  exclude:
+    - arch: ppc64le
+      go: tip
 
 # let us have pretty, fast Docker-based Travis workers!
 sudo: false
