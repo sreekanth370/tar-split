@@ -17,7 +17,7 @@ jobs:
     - arch: amd64
       go: tip 
     - arch: ppc64le
-      go: 1.2
+      go: tip
 
 # let us have pretty, fast Docker-based Travis workers!
 sudo: false
